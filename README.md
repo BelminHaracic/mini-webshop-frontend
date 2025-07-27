@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# 🛍️ Mini Webshop – Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Dobrodošli u **Mini Webshop** – jednostavnu web aplikaciju za prikaz, upravljanje i naručivanje proizvoda. Aplikacija je razvijena kao završni projekat sa osnovnim funkcijama za korisnike i administratore.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Pokretanje aplikacije lokalno
 
-### `npm start`
+Prati ove korake da pokreneš frontend aplikaciju lokalno:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+# 1. Idi u direktorij frontend
+cd frontend
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# 2. Instaliraj potrebne pakete
+npm install
 
-### `npm test`
+# 3. Pokreni razvojni server
+npm run dev
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Aplikacija će biti dostupna na `http://localhost:3000`.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🌐 Deploy verzija (Firebase)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Frontend aplikacija je deployana na Firebase i dostupna na sljedećem linku:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🔗 [https://mini-webshop-xxxxx.web.app](https://mini-webshop-xxxxx.web.app)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ⚙️ Funkcionalnosti
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Aplikacija uključuje sljedeće funkcionalnosti:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* 🛒 **Pregled proizvoda** – svi korisnici mogu vidjeti proizvode
+* ➕ **Dodavanje u korpu** – proizvodi se mogu dodavati u korpu
+* 📦 **Kreiranje narudžbi** – korisnici mogu završiti narudžbu
+* 🔐 **Login za admina** – samo admin ima pristup za upravljanje
+* ✏️ **Upravljanje proizvodima** – admin može dodavati, uređivati i brisati proizvode
+* 📁 **Pregled narudžbi** – admin može vidjeti sve narudžbe
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 👤 Vrste korisnika
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 👥 Gost korisnik (Guest)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Može pregledati proizvode
+* Može dodavati u korpu
+* Može kreirati narudžbu
 
-### Code Splitting
+### 🔐 Administrator (Admin)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* Može se prijaviti putem admin panela
+* Ima pristup svim narudžbama
+* Može dodavati/uređivati/brisati proizvode
 
-### Analyzing the Bundle Size
+> **Admin kredencijali**
+> 📧 Email: `admin@example.com`
+> 🔑 Lozinka: `admin123`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🔗 Povezani repozitoriji
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+📁 **Frontend source code:**
+🔗 [https://github.com/BelminHaracic/mini-webshop-frontend](https://github.com/BelminHaracic/mini-webshop-frontend)
 
-### Advanced Configuration
+📁 **Backend source code:**
+🔗 [https://github.com/BelminHaracic/mini-webshop-backend](https://github.com/BelminHaracic/mini-webshop-backend)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 🧪 API (za Postman)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+API se koristi za komunikaciju sa backendom. Dokumentacija i URL-ovi su dostupni u backend repozitoriju.
 
-### `npm run build` fails to minify
+🧹 **Primjer rute:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* `GET /products`
+* `POST /orders`
+* `PUT /orders/:id`
+
+---
+
+## 📝 Napomene
+
+* Aplikacija koristi **React** za frontend i **Flask/FastAPI** za backend.
+* Deployovan je samo frontend putem Firebase.
+* Cijeli projekat je edukativnog karaktera i može se proširivati dodatnim funkcijama.
+
+---
+
+✅ Ako želiš pokrenuti cijeli sistem lokalno (frontend + backend), pogledaj `README.md` fajl i backend repozitorij!
