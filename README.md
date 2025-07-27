@@ -59,7 +59,7 @@ Aplikacija uključuje sljedeće funkcionalnosti:
 * Može dodavati/uređivati/brisati proizvode
 
 > **Admin kredencijali**
-> 📧 Email: `admin@example.com`
+> 📧 ime: `admin`
 > 🔑 Lozinka: `admin123`
 
 ---
