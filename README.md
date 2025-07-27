@@ -27,7 +27,7 @@ Aplikacija će biti dostupna na `http://localhost:3000`.
 
 Frontend aplikacija je deployana na Firebase i dostupna na sljedećem linku:
 
-🔗 [https://mini-webshop-xxxxx.web.app](https://mini-webshop-xxxxx.web.app)
+🔗 [https://mini-webshop.web.app/](https://mini-webshop.web.app/)
 
 ---
 
