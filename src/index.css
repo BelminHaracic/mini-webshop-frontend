@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  color: white;
+  padding: 15px 30px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.navbar button {
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+/* Navbar styles */
+.nav-link {
+  @apply text-gray-300 hover:text-white transition-colors duration-200 font-medium flex items-center space-x-1;
+}
+
+.admin-link {
+  @apply flex items-center space-x-2 bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-lg text-white transition-colors duration-200 font-medium;
+}
+
+.admin-login-link {
+  @apply flex items-center space-x-2 bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg text-white transition-colors duration-200 font-medium;
+}
+
+.logout-btn {
+  @apply flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-lg text-white transition-colors duration-200 font-medium;
+}
+
+/* Mobile menu button (you can add this if you want mobile responsiveness) */
+.mobile-menu-btn {
+  @apply md:hidden text-gray-300 hover:text-white focus:outline-none;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.checkout-form input,
+.checkout-form textarea {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.checkout-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.success-message {
+  background: #d4edda;
+  padding: 20px;
+  border-radius: 8px;
+  color: #155724;
+  margin-top: 20px;
+}
